@@ -1,33 +1,42 @@
 <template>
-    <div style="background-color: #fff !important" class="w-100 d-flex align-center justify-center p-relative pb-12">
-        <div class="row ma-0 mt-12 mx-7 mx-lg-0 align-center" style="max-width: 1200px;     justify-content: center; ">
-            <div class="col-12 col-md-3 pa-0">
-                <div class="d-flex flex-column w-100">
-                    <div @click="stepPosition = i" class="d-flex pa-2 align-center step-item animated-normal" v-for="(item, i) in steps" :key="i" :class="i == stepPosition ? 'active' : ''">
-                        <div class="step-icon circle d-flex align-center justify-center  animated-normal" style="height: 35px; width: 35px; background: #f1f2f7;">
-                            <i :class="item.icon" class="fs-20"></i>
-                        </div>
-                        <span class="ml-3">{{item.title}}</span>
-                    </div>
+    <div style="background-color: #fff !important" class="w-100 d-flex align-center flex-column justify-center p-relative pb-12 mb-12">
+        <div class="row d-none d-md-flex ma-0 mt-12 mx-7 mx-lg-0" style="max-width: 1200px;     justify-content: center; ">
+            <div class="col-12 col-md-3 pa-0 p-relative d-flex" v-for="(item, i) in steps" :key="i">
+                <div class="d-flex mt-5 mt-md-0 flex-column w-100 hiw-item">
+                    <div class="circle d-flex align-center justify-center mx-auto fs-18 font-weight-bold" style="background: #f7f8fc; width: 60px; height: 60px;"><span>{{i+1}}</span></div>
+                    <div class="font-weight-bold poppins mt-1 mt-md-5 px-5" style="font-size: 20px; color: rgb(24, 59, 86)">{{item.title}}</div>
+                    <div class="px-5 d-none d-sm-block"><p class="poppins fs-15" style="line-height: 1.72; color: #6e6e6e;">{{item.description}}</p></div>
                 </div>
+                <i v-if="i != (steps.length - 1)" class="d-none d-sm-block ri-arrow-right-s-line" style="font-size: 36px; position: absolute; right: -17px;"></i>
             </div>
-            <div class="cold-12 col-md-9 pa-0">
-                <div class="row ma-0 mt-8 mt-md-0 align-center">
-                    <div class="col-12 col-sm-6 col-md-6 pa-0" style="z-index: 100">
-                        <div class="px-12 px-md-6 ml-0 ml-md-6">
-                            <Transition name="fade-in-up">
-                                <img style="z-index: 20"  v-show="changed" :src="require('@/assets/img/steps/' + steps[stepPosition].image)" class="w-100">
-                            </Transition>
+        </div>
+        <div class="row ma-0 mt-12 mx-7 mx-lg-0" style="max-width: 1200px;     justify-content: center; ">
+            <div class="col-12 col-md-12 pa-0 mt-0 p-relative d-flex" v-for="(item, i) in steps" :key="i">
+                <div class="row ma-0 mt-0 mx-7 mx-lg-0 py-0 py-md-5" :style="(i % 2 == 1 ? 'flex-direction: row-reverse !important;' : '') + (i != 0 ? 'margin-top: 60px !important' : '')">
+                    <div class="col-12 col-md-6 pa-0 p-relative d-flex">
+                        <div class="pa-0 pa-md-6">
+                            <div class="w-100" style="background: #f0f2f4">
+                                <img :src="require('@/assets/img/steps/' + item.image)" class="w-100">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 pa-0">
-                        <Transition name="fade-in-right">
-                            <div class="d-flex flex-column text-left pa-6 pa-md-0" v-show="changed">
-                                <span style="color: #952522; font-weight: 600" class="fs-15" v-if="changed">{{steps[stepPosition].title}}</span>
-                                <span style="color: rgb(24, 59, 86); font-size: 34px" class="font-weight-bold step-title py-4 pb-2 p-relative" v-if="changed">{{steps[stepPosition].longTitle}}</span>
-                                <p class="fs-15" style="color: rgb(131, 132, 133); line-height: 25px !important;" v-if="changed">{{steps[stepPosition].description}}</p>
+                    <div class="col-12 col-md-6 pa-0 p-relative d-flex">
+                        <div class="d-flex flex-column poppins text-left pa-0 pa-md-6 mt-4" style="color: rgb(24, 59, 86)">
+                            <div class="mb-3">
+                                <button class="hiw-button cursor-pointer hover-opacity">
+                                    <i class="ri-play-fill mr-2"></i>
+                                    Start with ease
+                                </button>
                             </div>
-                        </Transition>
+                            <span class="font-weight-bold" style="font-size: 42px;">Grow With Ease With Saasable</span>
+                            <p class="poppins fs-17 mb-6" style="line-height: 1.72; color: #6e6e6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <div class="d-flex align-center mb-3 mt-2" v-for="x in 3" :key="x">
+                                <div class="circle d-flex align-center justify-center" style="width: 37px; min-width: 37px; height: 37px; min-height: 37px; background:#e7f8eb; line-height: 37px;">
+                                    <i class="ri-check-line fs-25" style="color: #61d37e"></i>
+                                </div>
+                                <span class="ml-3 fs-15" style="font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,32 +57,34 @@ export default {
                 {
                     icon: 'ri-settings-5-fill',
                     title: 'İhtiyacını Belirt',
-                    image: 'steps-thumb-1.png',
+                    image: 'hiw-1.png',
                     longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. Phasellus iaculis volutpat eleifend. Curabitur interdum ornare quam, sit amet ultrices elit sagittis at. Donec vitae condimentum sem. Nunc felis enim, posuere eget enim vel, dapibus fermentum diam.'
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
                 },
                 {
                     icon: 'ri-notification-3-fill',
                     title: 'Binlerce Tedarikçiye Ulaş',
-                    image: 'steps-thumb-1.png',
+                    image: 'hiw-2.png',
                     longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. Phasellus iaculis volutpat eleifend. Curabitur interdum ornare quam, sit amet ultrices elit sagittis at. Donec vitae condimentum sem. Nunc felis enim, posuere eget enim vel, dapibus fermentum diam.'
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
                 },
                 {
                     icon: 'ri-alert-fill',
                     title: 'Tedarikçilerden Teklif Al',
-                    image: 'steps-thumb-1.png',
+                    image: 'hiw-1.png',
                     longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. Phasellus iaculis volutpat eleifend. Curabitur interdum ornare quam, sit amet ultrices elit sagittis at. Donec vitae condimentum sem. Nunc felis enim, posuere eget enim vel, dapibus fermentum diam.'
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
                 },
+                /*
                 {
                     icon: 'ri-lock-2-fill',
                     title: 'Sana En Uygun Olanı Seç',
-                    image: 'steps-thumb-1.png',
+                    image: 'hiw-2.png',
                     longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. Phasellus iaculis volutpat eleifend. Curabitur interdum ornare quam, sit amet ultrices elit sagittis at. Donec vitae condimentum sem. Nunc felis enim, posuere eget enim vel, dapibus fermentum diam.'
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
 
                 }
+                */
             ]
         }
     },
@@ -109,6 +120,9 @@ export default {
         color:white;
     }
 
+    .hiw-r-arrow {
+
+    }
 
     /*
     .step-title::before{
@@ -155,6 +169,18 @@ export default {
         animation-name: fadeInRight;
     }
 
-    
+    .hiw-button{
+        background: #952522;
+        padding: 15px 17px;
+        border-radius: 400px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hiw-button > i {
+        font-size: 18px;
+    }
     
 </style>

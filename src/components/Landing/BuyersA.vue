@@ -4,7 +4,7 @@
             <div class="col-12 col-md-6 pa-0">
                 <div class="pa-12 pa-sm-6 pa-md-0">
                     <div class="mr-2 mr-md-9 p-relative adv-img-wrapper">
-                        <img :src="require('@/assets/img/sup.png')"  class="adv-img">
+                        <img :src="require('@/assets/img/sup3.png')"  class="adv-img">
                     </div>
                 </div>
                 

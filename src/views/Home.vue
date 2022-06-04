@@ -1,20 +1,19 @@
 <template>
     <div class="home">
-        <SectionOne></SectionOne>
-        <SectionTwo></SectionTwo>
+        <Heading></Heading>
+        <SectionTwo v-if="false"></SectionTwo>
         <HowItWorks></HowItWorks>
-        <SectionFour></SectionFour>
         <BuyersA></BuyersA>
-        <SuppliersA></SuppliersA>
-        <SectionFive></SectionFive>
-        <BecameSupplier></BecameSupplier>
-        <Footer></Footer>
+        <SuppliersA v-if="false"></SuppliersA>
+        <SectionFive v-if="false"></SectionFive>
+        <BecameSupplier v-if="false"></BecameSupplier>
+        <Footer v-if="false"></Footer>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import SectionOne from '@/components/Landing/SectionOne.vue'
+import Heading from '@/components/Landing/Heading.vue'
 import SectionTwo from '@/components/Landing/SectionTwo.vue'
 import HowItWorks from '@/components/Landing/HowItWorks.vue'
 import BuyersA from '@/components/Landing/BuyersA.vue'
@@ -27,7 +26,7 @@ import Footer from '@/components/Landing/Footer.vue'
 export default {
     name: 'Home',
     components: {
-        SectionOne,
+        Heading,
         SectionTwo,
         HowItWorks,
         BuyersA,
