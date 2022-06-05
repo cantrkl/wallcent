@@ -17,7 +17,7 @@
 // @ is an alias to /src
 import Heading from '@/components/Landing/Heading.vue'
 import SectionTwo from '@/components/Landing/SectionTwo.vue'
-import HowItWorks from '@/components/Landing/HowItWorks.vue'
+import HowItWorks from '@/components/Landing/HowItWorks_new.vue'
 import BuyersA from '@/components/Landing/BuyersA.vue'
 import SectionFour from '@/components/Landing/SectionFour.vue'
 import SuppliersA from '@/components/Landing/SuppliersA.vue'
@@ -42,3 +42,5 @@ export default {
     }
 }
 </script>
+
+

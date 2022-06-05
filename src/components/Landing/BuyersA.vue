@@ -1,36 +1,33 @@
 <template>
-    <div class="w-100 d-flex align-center justify-center p-relative py-12 pb-1 pb-md-3" :style="'background: #f3f6f9 !important;'">
-        <div class="row ma-0 mt-12 align-center" style="max-width: 1200px;     justify-content: center; z-index: 2">
-            <div class="col-12 col-md-6 pa-0">
-                <div class="pa-12 pa-sm-6 pa-md-0">
-                    <img :src="require('@/assets/img/sup3.png')"  class="adv-img">
+    <div class="w-100 d-flex align-center justify-center p-relative py-0 pb-0 pb-md-0" :style="'background: #f3f6f9 !important;'">
+        <div class="row ma-0 mt-0 align-center" style="max-width: 1200px;     justify-content: center; z-index: 2">
+            <div class="col-12 col-md-5 pa-0">
+                <div class="pa-12 pa-sm-6 pa-md-0 pb-0">
+                    <img :src="require('@/assets/img/sup2.png')"  class="adv-img">
                 </div>
                 
             </div>
-            <div class="col-12 col-md-6 pa-0">
-                <div class="pa-12 pa-sm-6 pa-md-0">
+            <div class="col-12 col-md-7 pa-0">
+                <div class="pa-12 pa-sm-6 pa-md-0 py-0">
                     <div class="d-flex flex-column  text-left px-2 px-md-12">
-                        <span style="color: rgb(149 37 34); font-size: 15px; font-weight: 500!important;" class="">EN UYGUN</span>
-                        <span style="color: rgb(0, 0, 0); font-size: 40px" class="font-weight-bold pb-2 pt-2">Track your crytpo portfolio on the best way possible</span>
-                        <p style="line-height: 1.72; color: #6e6e6e;" class="fs-15">
-                            All designs here are based on a collection of most fashionable designs in the world. These designs are made by a group of trendsetting designers who are gifted with second sight. More than 70K people are eager to become fans of these designs and always give us top ratings.
-                        </p>
-                        <hr style="height: 1px; width: 100%; border: none; border-bottom: solid 1px #E6E6E6;">
-                        <div class="d-flex flex-column mt-5">
-                            <div class="adv w-100 d-flex align-center">
-                                <div  class="circle d-flex align-center justify-center" style="width: 28px; min-width: 28px; height: 28px; min-height: 28px; background:#FDBC64; line-height: 28px;">
-                                    <i class="ri-check-line fs-22" style="color: white"></i>
-                                </div>
-                                <div class="d-flex flex-column ml-4">
-                                    <span style=" color: #505887; font-weight: 500!important;" class="fs-15 mt-1">Wallcent'de, ihtiyacınız olan ürünün tedarikçileri ile sizleri buluşturuyoruz.</span>
-                                </div>
+                        <div class="d-flex flex-column poppins text-left pa-0 pa-md-6 mt-4" style="color: rgb(24, 59, 86)">
+                            <div class="mb-3">
+                                <button class="hiw-button cursor-pointer hover-opacity">
+                                    <i class="ri-play-fill mr-2"></i>
+                                    Start with ease
+                                </button>
                             </div>
-                            <div class="adv w-100 d-flex align-center mt-3">
-                                <div  class="circle d-flex align-center justify-center" style="width: 28px; min-width: 28px; height: 28px; min-height: 28px; background:#FDBC64; line-height: 28px;">
-                                    <i class="ri-check-line fs-22" style="color: white"></i>
-                                </div>
-                                <div class="d-flex flex-column ml-4">
-                                    <span style=" color: #505887; font-weight: 500!important;" class="fs-15 mt-1">Wallcent'de, ihtiyacınız olan ürünün tedarikçileri ile sizleri buluşturuyoruz.</span>
+                            <span class="font-weight-bold" style="font-size: 42px;">Grow With Ease</span>
+                            <p class="poppins fs-17 mb-6" style="line-height: 1.72; color: #6e6e6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <div class="pa-3">
+                                <div class="row mt-2">
+                                    <div class="col-6 col-md-6 pa-0"  v-for="x in 4" :key="x">
+                                        <div class="d-flex flex-column">
+                                            <i class="ri-compasses-2-fill fs-29" style="color: #952522"></i>
+                                            <span class="poppins mt-2 font-weight-bold">Easy customization</span>
+                                            <p class="poppins fs-12 mb-6" style="line-height: 1.72; color: #6e6e6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -87,6 +84,8 @@ export default {
         width: 100%;
         border-radius:10px;
         transition: .6s;
+        
+        max-width: 500px;
     }
 
     @media (max-width: 1264px) { 
@@ -96,5 +95,19 @@ export default {
         }
     }
     
+
+    .hiw-button{
+        background: #952522;
+        padding: 15px 17px;
+        border-radius: 400px;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hiw-button > i {
+        font-size: 18px;
+    }
 </style>
 
