@@ -5,7 +5,7 @@
                 <div class="d-flex mt-5 mt-md-0 flex-column w-100 hiw-item">
                     <div class="circle d-flex align-center justify-center mx-auto fs-18 font-weight-bold" style="background: #f7f8fc; width: 60px; height: 60px;"><span>{{i+1}}</span></div>
                     <div class="font-weight-bold poppins mt-1 mt-md-5 px-5" style="font-size: 20px; color: rgb(24, 59, 86)">{{item.title}}</div>
-                    <div class="px-5 d-none d-sm-block"><p class="poppins fs-15" style="line-height: 1.72; color: #6e6e6e;">{{item.description}}</p></div>
+                    <div v-if="false" class="px-5 d-none d-sm-block"><p class="poppins fs-15" style="line-height: 1.72; color: #6e6e6e;">{{item.description}}</p></div>
                 </div>
                 <i v-if="i != (steps.length - 1)" class="d-none d-sm-block ri-arrow-right-s-line" style="font-size: 36px; position: absolute; right: -17px;"></i>
             </div>
@@ -28,8 +28,8 @@
                                     Start with ease
                                 </button>
                             </div>
-                            <span class="font-weight-bold" style="font-size: 42px;">Grow With Ease With Saasable</span>
-                            <p class="poppins fs-17 mb-6" style="line-height: 1.72; color: #6e6e6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <span class="font-weight-bold" style="font-size: 42px;">{{item.title}}</span>
+                            <p class="poppins fs-17 mb-6" style="line-height: 1.72; color: #6e6e6e;">{{item.description}}</p>
                             <div class="d-flex align-center mb-3 mt-2" v-for="x in 3" :key="x">
                                 <div class="circle d-flex align-center justify-center" style="width: 37px; min-width: 37px; height: 37px; min-height: 37px; background:#e7f8eb; line-height: 37px;">
                                     <i class="ri-check-line fs-25" style="color: #61d37e"></i>
@@ -56,35 +56,33 @@ export default {
             steps: [
                 {
                     icon: 'ri-settings-5-fill',
-                    title: 'İhtiyacını Belirt',
+                    title: 'Talep Oluştur',
                     image: 'hiw-1.png',
-                    longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
+                    longTitle: 'Dakikalar İçinde Talep Oluştur',
+                    description: 'İş talebinizle ilgili kategoriyi seçin ve aradığınız ürünün bilgilerini, çalışma şartlarınızı detaylarıyla belirterek bir talep oluşturun.'
                 },
                 {
                     icon: 'ri-notification-3-fill',
-                    title: 'Binlerce Tedarikçiye Ulaş',
+                    title: 'Talebin Tedarikçilere Ulaşsın',
                     image: 'hiw-2.png',
                     longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
+                    description: 'Teklifin, Wallcent’te kayıtlı, ilgili kategorideki tüm tedarikçilere anında ulaşır.'
                 },
                 {
                     icon: 'ri-alert-fill',
-                    title: 'Tedarikçilerden Teklif Al',
+                    title: 'Tedarikçiler Teklif Versin',
                     image: 'hiw-1.png',
                     longTitle: 'The standard Lorem Ipsum passage',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
                 },
-                /*
                 {
                     icon: 'ri-lock-2-fill',
-                    title: 'Sana En Uygun Olanı Seç',
+                    title: 'Teklifleri İncele, En Uygununu Seç',
                     image: 'hiw-2.png',
                     longTitle: 'The standard Lorem Ipsum passage',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
 
                 }
-                */
             ]
         }
     },

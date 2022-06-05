@@ -4,10 +4,12 @@
         <SectionTwo v-if="false"></SectionTwo>
         <HowItWorks></HowItWorks>
         <BuyersA></BuyersA>
-        <SuppliersA v-if="false"></SuppliersA>
+        <SuppliersA></SuppliersA>
+
         <SectionFive v-if="false"></SectionFive>
         <BecameSupplier v-if="false"></BecameSupplier>
-        <Footer v-if="false"></Footer>
+        <SubscribeForm></SubscribeForm>
+        <Footer></Footer>
     </div>
 </template>
 
@@ -21,6 +23,7 @@ import SectionFour from '@/components/Landing/SectionFour.vue'
 import SuppliersA from '@/components/Landing/SuppliersA.vue'
 import SectionFive from '@/components/Landing/SectionFive.vue'
 import BecameSupplier from '@/components/Landing/BecameSupplier.vue'
+import SubscribeForm from '@/components/Landing/SubscribeForm.vue'
 import Footer from '@/components/Landing/Footer.vue'
 
 export default {
@@ -34,6 +37,7 @@ export default {
         SuppliersA,
         SectionFive,
         BecameSupplier,
+        SubscribeForm,
         Footer
     }
 }
