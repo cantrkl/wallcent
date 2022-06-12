@@ -30,10 +30,10 @@
                                     <div class="col-12 col-md-5 pa-0">
                                         <div class="text-left d-flex flex-column" style="height: 100%;">
                                             <span :style="'font-size: ' + ($store.state.dimensions.width > 960 ? '60px' : '35px') + '; font-weight: 600'">{{step.title}}</span>
-                                            <div class="flex-fill"></div>
+                                            <div v-if="false" class="flex-fill"></div>
                                             
-                                            <span class="poppins mt-8 mt-md-2 font-weight-bold">{{step.description}}</span>
-                                            <p v-if="false" class="poppins fs-15 pb-0 mb-0 pr-5" style="line-height: 1.72; color: #6e6e6e;">{{step.description}}</p>
+                                            <span v-if="false"  class="poppins mt-8 mt-md-2 font-weight-bold">{{step.description}}</span>
+                                            <p :class="$store.state.dimensions.width > 960 ? 'fs-20' : 'fs-15'" class="poppins pb-0 mb-0 pr-5" style="line-height: 1.72; color: #6e6e6e;">{{step.description}}</p>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-7 pa-0">

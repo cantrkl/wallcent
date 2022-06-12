@@ -15,7 +15,7 @@
                                 </div>
                             </div>
                             
-                            <button class="border-none cursor-pointer hover-opacity font-weight-bold roboto fs-15 manrope ml-2" style="padding: 20px 22px ; background: #F7F9FB; color: #952522; border-radius: 10px">Satıcı Ol</button>
+                            <button class="border-none cursor-pointer hover-opacity font-weight-bold roboto fs-15 manrope ml-2" style="padding: 20px 22px ; background: #F7F9FB; color: #952522; border-radius: 10px">Tedarikçi Ol</button>
                         </div>
                     </div>
                 </div>
@@ -100,6 +100,7 @@ export default {
     .heading {
         background-size: auto;
         background-repeat-y: no-repeat;
+        background-repeat: repeat-x;
     }
     .heading-background {
         position: absolute;
