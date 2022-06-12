@@ -3,7 +3,7 @@
         <div class="row ma-0 mx-5 mx-md-auto align-center" style="max-width: 1200px;  background:#f0f2f4; border-radius: 10px;   justify-content: center; z-index: 2">
             <div class="col-12 col-md-6 pa-0">
                 <div class="pa-5 pa-md-12 ma-6 text-center text-md-left">
-                    <span :style="'font-size: ' + ($store.state.dimensions.width > 960 ? '55px' : '30px')" class="font-weight-bold black--text">Subscribe to <br class="d-none d-md-block"> stay updated</span>
+                    <span :style="'font-size: ' + ($store.state.dimensions.width > 960 ? '55px' : '30px')" class="font-weight-bold black--text">Şimdiden<br class="d-none d-md-block">yerini al</span>
                 </div>
             </div>
             <div class="col-12 col-md-6 pa-0">

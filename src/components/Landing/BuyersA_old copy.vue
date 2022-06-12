@@ -10,7 +10,7 @@
             <div class="col-12 col-md-6 pa-0">
                 <div class="pa-12 pa-sm-6 pa-md-0">
                     <div class="d-flex flex-column  text-left px-2 px-md-12">
-                        <span style="color: rgb(149 37 34); font-size: 15px; font-weight: 500!important;" class="">EN UYdddGUN</span>
+                        <span style="color: rgb(149 37 34); font-size: 15px; font-weight: 500!important;" class="">EN UYGUN</span>
                         <span style="color: rgb(0, 0, 0); font-size: 40px" class="font-weight-bold pb-2 pt-2">Track your crytpo portfolio on the best way possible</span>
                         <p style="line-height: 1.72; color: #6e6e6e;" class="fs-15">
                             All designs here are based on a collection of most fashionable designs in the world. These designs are made by a group of trendsetting designers who are gifted with second sight. More than 70K people are eager to become fans of these designs and always give us top ratings.

@@ -13,8 +13,8 @@
                         <div class="step-card"  style="height: 100%;">
                             <div class="d-flex flex-column pa-8 justify-start text-left w-100">
                                 <span style="font-size: 30px; font-weight: 900">{{i+1}}</span>
-                                <span class="mt-4" style="font-size: 25px; font-weight: 600">Start</span>
-                                <p class="poppins fs-15 pb-0 mb-0" style="line-height: 1.72; color: #6e6e6e;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspend varius enim in eros.</p>
+                                <span class="mt-4" style="font-size: 25px; font-weight: 600">{{step.longTitle}}</span>
+                                <p v-if="false" class="poppins fs-15 pb-0 mb-0" style="line-height: 1.72; color: #6e6e6e;">{{step.description}}</p>
                             </div>
                         </div>
                     </div>
@@ -32,8 +32,8 @@
                                             <span :style="'font-size: ' + ($store.state.dimensions.width > 960 ? '60px' : '35px') + '; font-weight: 600'">{{step.title}}</span>
                                             <div class="flex-fill"></div>
                                             
-                                            <span class="poppins mt-8 mt-md-2 font-weight-bold">Easy customization</span>
-                                            <p class="poppins fs-15 pb-0 mb-0 pr-5" style="line-height: 1.72; color: #6e6e6e;">{{step.description}}</p>
+                                            <span class="poppins mt-8 mt-md-2 font-weight-bold">{{step.description}}</span>
+                                            <p v-if="false" class="poppins fs-15 pb-0 mb-0 pr-5" style="line-height: 1.72; color: #6e6e6e;">{{step.description}}</p>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-7 pa-0">
@@ -62,31 +62,31 @@ export default {
             steps: [
                 {
                     icon: 'ri-settings-5-fill',
-                    title: 'Talep Oluştur',
+                    title: 'Satın Alma Talebi Oluştur',
                     image: 'hiw1.png',
-                    longTitle: 'Dakikalar İçinde Talep Oluştur',
-                    description: 'İş talebinizle ilgili kategoriyi seçin ve aradığınız ürünün bilgilerini, çalışma şartlarınızı detaylarıyla belirterek bir talep oluşturun.'
+                    longTitle: 'Satın Alma Talebi Oluştur',
+                    description: 'İhtiyaç duyduğunuz ürünün ve hizmetin bilgilerini girerek dakikalar içinde satın alma talebinizi oluşturun.'
                 },
                 {
                     icon: 'ri-notification-3-fill',
                     title: 'Talebin Tedarikçilere Ulaşsın',
                     image: 'hiw2.png',
-                    longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Teklifin, Wallcent’te kayıtlı, ilgili kategorideki tüm tedarikçilere anında ulaşır.'
+                    longTitle: 'Talebin Tedarikçilere Ulaşsın',
+                    description: 'Oluşturulan alım talepleri Wallcent’te kayıtlı tedarikçilere özel olarak iletilir ve talep havuzuna eklenir bu sayede talebiniz saniyeler içinde onlarca tedarikçiye ulaşır.'
                 },
                 {
                     icon: 'ri-alert-fill',
-                    title: 'Tedarikçiler Teklif Versin',
+                    title: 'Teklif Al',
                     image: 'hiw3.png',
-                    longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
+                    longTitle: 'Teklif Al',
+                    description: 'Wallcent’te kayıtlı tedarikçiler, talebinizi inceler ve sizlere tekliflerini iletir.'
                 },
                 {
                     icon: 'ri-lock-2-fill',
                     title: 'Teklifleri İncele, En Uygununu Seç',
                     image: 'hiw4.png',
-                    longTitle: 'The standard Lorem Ipsum passage',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet lacus quis neque consequat dapibus. '
+                    longTitle: 'Teklifleri İncele, En Uygununu Seç',
+                    description: 'Talebine yapılan tüm teklifleri incele, arasından en uygun olanı seç ve tedarikçi ile iletişime geç.'
 
                 }
             ]

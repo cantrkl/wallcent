@@ -6,7 +6,7 @@
                 <div class=" mt-12 mt-sm-0  d-flex text-center align-center justify-center"  style="max-width:800px;     margin: 0 auto;">
                     <div class="d-flex flex-column w-100 text-center pa-5 pa-md-0">
                         <span style="font-size: 48px" class="font-weight-black py-6 pb-2 manrope">Yeni tedarikçilerle sizleri buluşturan iş ortağınız</span>
-                        <p class="fs-17 manrope text-center mx-auto font-weight-bold" style="color: rgba(0,0,0,.5); line-height: 25px !important; max-width:500px;">İşiniz için gerekli tüm tedarikçilere erişip, teklif alabileceğiniz platform, Wallcent.</p>
+                        <p class="fs-17 manrope text-center mx-auto font-weight-bold" style="color: rgba(0,0,0,.5); line-height: 25px !important; max-width:500px;">Wallcent sayesinde, ihtiyacın olan ürün ve hizmeti sağlayan onlarca tedarikçiden dakikalar içinde fiyat teklifi al. Ön kayıt yaptır, şimdiden yerini al.</p>
                         <div class="d-none d-md-flex flex-wrap align-center align-center justify-center">
                             <div class="pa-5">
                                 <div class="d-flex" style="padding: 5px; background: #f4f3f7; border-radius: 10px;">
