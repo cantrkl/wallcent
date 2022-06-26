@@ -10,6 +10,8 @@
         <BecameSupplier v-if="false"></BecameSupplier>
         <SubscribeForm></SubscribeForm>
         <Footer></Footer>
+
+        <FindSupModal></FindSupModal>
     </div>
 </template>
 
@@ -26,6 +28,8 @@ import BecameSupplier from '@/components/Landing/BecameSupplier.vue'
 import SubscribeForm from '@/components/Landing/SubscribeForm.vue'
 import Footer from '@/components/Landing/Footer.vue'
 
+import FindSupModal from '@/components/Modals/FindSupModal'
+
 export default {
     name: 'Home',
     components: {
@@ -38,7 +42,9 @@ export default {
         SectionFive,
         BecameSupplier,
         SubscribeForm,
-        Footer
+        Footer,
+
+        FindSupModal
     }
 }
 </script>

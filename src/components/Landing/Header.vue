@@ -14,9 +14,6 @@
                 <option :value="item.code" v-for="item in $store.state.languages" :key="item.code">{{item.text}}</option>
             </select>
             <div class="d-flex align-center">
-                <router-link to="/login" class="mr-3">
-                    <button class="rounded-lg w-100 border-none transparent cursor-pointer hover-opacity font-weight-bold roboto" style="padding: 13px 20px ;">Tedarikçi Ol</button>
-                </router-link>
                 <router-link to="/login">
                     <button disabled class="rounded-lg white--text w-100 border-none red darken-4 cursor-pointer hover-opacity font-weight-bold roboto" style="padding: 13px 20px ;">Giriş</button>
                 </router-link>

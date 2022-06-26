@@ -3,7 +3,7 @@
         <div class="row ma-0 mt-0 align-center" style="max-width: 1200px;     justify-content: center; z-index: 2">
             <div class="col-12 col-md-5 pa-0">
                 <div class="pa-12 pa-sm-6 pa-md-0 pb-0">
-                    <img :src="require('@/assets/img/sup2.png')"  class="adv-img">
+                    <img :src="require('@/assets/img/sup2-2.png')"  class="adv-img">
                 </div>
                 
             </div>

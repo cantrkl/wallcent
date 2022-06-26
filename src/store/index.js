@@ -9,9 +9,28 @@ export default createStore({
         ],
         selectedLanguage: '',
         dimensions: { width: window.innerWidth, height: window.innerHeight },
-        position: { positionY: 0, positionX: 0 }
+        position: { positionY: 0, positionX: 0 },
+        modals: {
+			findSupModal: {
+				visible: false,
+                fullName: '',
+                companyName: '',
+                sector: '',
+                email: ''
+			},
+			becameSupModal: {
+				visible: false,
+                fullName: '',
+                companyName: '',
+                sector: '',
+                email: ''
+			},
+        }
     },
     mutations: {
+        setModal (state, obj) {
+        	state.modals[obj[0]] = obj[1]
+		}
     },
     actions: {
     },

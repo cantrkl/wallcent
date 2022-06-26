@@ -63,28 +63,28 @@ export default {
                 {
                     icon: 'ri-settings-5-fill',
                     title: 'Satın Alma Talebi Oluştur',
-                    image: 'hiw1.png',
+                    image: 'hiw1-2.png',
                     longTitle: 'Satın Alma Talebi Oluştur',
                     description: 'İhtiyaç duyduğunuz ürünün ve hizmetin bilgilerini girerek dakikalar içinde satın alma talebinizi oluşturun.'
                 },
                 {
                     icon: 'ri-notification-3-fill',
                     title: 'Talebin Tedarikçilere Ulaşsın',
-                    image: 'hiw2.png',
+                    image: 'hiw2-2.png',
                     longTitle: 'Talebin Tedarikçilere Ulaşsın',
                     description: 'Oluşturulan alım talepleri Wallcent’te kayıtlı tedarikçilere özel olarak iletilir ve talep havuzuna eklenir bu sayede talebiniz saniyeler içinde onlarca tedarikçiye ulaşır.'
                 },
                 {
                     icon: 'ri-alert-fill',
                     title: 'Teklif Al',
-                    image: 'hiw3.png',
+                    image: 'hiw3-2.png',
                     longTitle: 'Teklif Al',
                     description: 'Wallcent’te kayıtlı tedarikçiler, talebinizi inceler ve sizlere tekliflerini iletir.'
                 },
                 {
                     icon: 'ri-lock-2-fill',
                     title: 'Teklifleri İncele, En Uygununu Seç',
-                    image: 'hiw4.png',
+                    image: 'hiw4-2.png',
                     longTitle: 'Teklifleri İncele, En Uygununu Seç',
                     description: 'Talebine yapılan tüm teklifleri incele, arasından en uygun olanı seç ve tedarikçi ile iletişime geç.'
 

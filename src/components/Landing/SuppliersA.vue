@@ -1,5 +1,5 @@
 <template>
-    <div class="w-100 d-flex align-center justify-center p-relative py-1 pb-1 pb-md-3" :style="'background: #fff !important;'"><!--f3f6f9-->
+    <div class="w-100 d-flex align-center justify-center p-relative py-1 pb-1 pb-md-3 mt-6 mt-md-0" :style="'background: #fff !important;'"><!--f3f6f9-->
         <div class="row ma-0 mt-0 align-center flex-column-reverse flex-md-row" style="max-width: 1200px;     justify-content: center; z-index: 2">
             
             <div class="col-12 col-md-7 pa-0">
@@ -30,7 +30,7 @@
             </div>
             <div class="col-12 col-md-5 pa-0">
                 <div class="pa-12 pa-sm-6 pa-md-0 py-0">
-                    <img :src="require('@/assets/img/sup4.png')"  class="adv-img">
+                    <img :src="require('@/assets/img/sup4-2.png')"  class="adv-img">
                 </div>
             </div>
         </div>

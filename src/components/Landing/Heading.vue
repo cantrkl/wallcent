@@ -10,8 +10,14 @@
                         <div class="d-none d-md-flex flex-wrap align-center align-center justify-center">
                             <div class="pa-5">
                                 <div class="d-flex" style="padding: 5px; background: #f4f3f7; border-radius: 10px;">
-                                    <input placeholder="your@mail.com" class="border-none" style="font-size: 15px; padding: 18px; margin-right: 6px; border-radius: 10px; border: none; background: #fff;"/>
-                                    <button class="white--text one-line border-none cursor-pointer hover-opacity font-weight-bold roboto fs-15 manrope " style="padding: 17px 20px ; background: #952522; border-radius: 10px">Tedarikçi Bul</button>
+                                    <input v-model="email" placeholder="E-posta" class="border-none" style="font-size: 15px; padding: 18px; margin-right: 6px; border-radius: 10px; border: none; background: #fff;"/>
+                                    <button @click="this.$store.commit('setModal', ['findSupModal', { 
+                                            visible: true,
+                                            fullName: '',
+                                            companyName: '',
+                                            sector: '',
+                                            email: email,
+                                    }])" class="white--text one-line border-none cursor-pointer hover-opacity font-weight-bold roboto fs-15 manrope " style="padding: 17px 20px ; background: #952522; border-radius: 10px">Tedarikçi Bul</button>
                                 </div>
                             </div>
                             
@@ -60,7 +66,8 @@ export default {
     name: 'SectionOne',
     data: function () {
         return {
-            sliderPosition: 1
+            sliderPosition: 1,
+            email: ''
         }
     },
     mounted(){

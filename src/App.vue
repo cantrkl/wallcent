@@ -32,6 +32,7 @@ export default {
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    @import "./assets/styles/animate.css";
     @import "./assets/styles/global.css";
     @import "./assets/styles/theme.css";
     #app {
